@@ -22,4 +22,5 @@ function repeat(func,num)
 
  console.log('Testing return value of repeat',repeat(dummyf,3)===3);
  counter = 0;
- console.log('Testing what dummyf returns',dummyf() === 0);
+ dummyf();
+ console.log('Testing what dummyf returns',counter === 1);
