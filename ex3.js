@@ -1,5 +1,5 @@
 function doubleAll(numbers) {
-	let result = numbers;
+	let result = numbers.map(element => element*2);
 	return result;
 }
 
