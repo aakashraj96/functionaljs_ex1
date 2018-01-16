@@ -1,7 +1,15 @@
-function checkUsersValid(goodUsers) {
-      return function allUsersValid(submittedUsers) {
-      			return false;
-      		};
+function checkUsersValid(goodUsers) 
+{
+    return function allUsersValid(submittedUsers) 
+    {
+   		return submittedUsers.every(function (obj)
+     	{
+      		return decision = goodUsers.some( function (element)
+      		{
+   				return element.id === obj.id;
+      		});									
+      	});
+    };
 }
 
 
@@ -18,3 +26,4 @@ console.log('Checking function call',testAllValid([
       { id: 2 },
       { id: 1 }
     ]) );
+
