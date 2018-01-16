@@ -1,17 +1,14 @@
 
 function reducer(accumulator, currentvalue)
 {
-	if(!Object.keys(accumulator).some( function (value)
-		{
-			return currentvalue === value;
-		})
-	)
+	if(accumulator[currentvalue])
 	{
-		accumulator[currentvalue] = 1;
+		accumulator[currentvalue]++;
 	}
 	else
 	{
-		accumulator[currentvalue]++;
+
+		accumulator[currentvalue] = 1;
 	}
 	return accumulator;
 	
