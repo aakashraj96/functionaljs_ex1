@@ -22,15 +22,17 @@ let goodUsers = [
 let testAllValid = checkUsersValid(goodUsers);
 
 
-console.log('Checking function call',testAllValid([
-      { id: 2 },
-      { id: 1 }
-    ]) === true);
+// console.log('Checking function call',testAllValid([
+//       { id: 2 },
+//       { id: 1 }
+//     ]) === true);
 
 
-console.log('Checking function call',testAllValid([
-      { id: 2 },
-      { id: 1 },
-      { id: 4 }
-    ]) === false);
+// console.log('Checking function call',testAllValid([
+//       { id: 2 },
+//       { id: 1 },
+//       { id: 4 }
+//     ]) === false);
 
+
+module.exports = checkUsersValid
