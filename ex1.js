@@ -1,0 +1,1 @@
+console.log('Testing the function',upperCaser('hello')==='HELLO');
