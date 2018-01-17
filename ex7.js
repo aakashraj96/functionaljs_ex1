@@ -19,3 +19,13 @@ console.log('Basic function call', reduce([1,2,3], function(prev, curr, index, a
 console.log('Passing an empty array', reduce([], function(prev, curr) {
 	return prev + curr;
 }, 0) === 0);
+
+console.log('Passing Objects', reduce([{'value': 1},{'value': 2}], function(prev, curr) {
+	prev['value'] += curr['value'];
+	return prev;
+}, {'value':0})['value'] === 3);
+
+
+console.log('Passing  strings', reduce(['hello','world'], function(prev, curr) {
+	return prev + curr;
+}, '') === 'helloworld');
