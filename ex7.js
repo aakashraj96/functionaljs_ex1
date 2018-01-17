@@ -12,10 +12,10 @@ function reduce(arr, fn, initial, index = 0) {
 
 module.exports = reduce;
 
-console.log( reduce([1,2,3], function(prev, curr, index, arr) {
+console.log('Basic function call', reduce([1,2,3], function(prev, curr, index, arr) {
 	return prev + curr;
 }, 0) === 6);
 
-console.log( reduce([], function(prev, curr) {
+console.log('Passing an empty array' reduce([], function(prev, curr) {
 	return prev + curr;
 }, 0) === 0);
