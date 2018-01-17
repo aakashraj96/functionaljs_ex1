@@ -28,7 +28,7 @@ console.log('Checking function call',testAllValid([
 ]) === true);
 
 
-console.log('Checking function call',testAllValid([
+console.log('A false input',testAllValid([
 	{ id: 2 },
 	{ id: 1 },
 	{ id: 4 }
