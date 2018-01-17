@@ -1,5 +1,13 @@
-function reduce(arr, fn, initial) {
-  
+function reduce(arr, fn, initial, index = 0) {
+	if(arr.length === index)
+	{
+		console.log(initial);
+		return initial;
+	}
+	else {
+		let result = fn(initial,arr[index]);
+		return reduce(arr,fn,result,++index);
+	}
 }
 
 module.exports = reduce;
