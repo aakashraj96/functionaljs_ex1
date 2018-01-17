@@ -1,0 +1,26 @@
+{
+  "name": "linting",
+  "version": "1.0.0",
+  "description": "For eslint",
+  "main": "ex1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aakashraj96/functionaljs_ex1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aakashraj96/functionaljs_ex1/issues"
+  },
+  "homepage": "https://github.com/aakashraj96/functionaljs_ex1#readme",
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

@@ -24,4 +24,4 @@ function doubleAll(numbers) {
 
 // console.log('Testing doubleAll call',arrayEqual(doubleAll([1,2,3]),[2,4,6]));
 
- module.exports = doubleAll;
+module.exports = doubleAll;
