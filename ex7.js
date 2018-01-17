@@ -15,3 +15,7 @@ module.exports = reduce;
 console.log( reduce([1,2,3], function(prev, curr, index, arr) {
 	return prev + curr;
 }, 0) === 6);
+
+console.log( reduce([], function(prev, curr) {
+	return prev + curr;
+}, 0) === 0);
