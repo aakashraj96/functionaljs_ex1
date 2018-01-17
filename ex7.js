@@ -16,6 +16,6 @@ console.log('Basic function call', reduce([1,2,3], function(prev, curr, index, a
 	return prev + curr;
 }, 0) === 6);
 
-console.log('Passing an empty array' reduce([], function(prev, curr) {
+console.log('Passing an empty array', reduce([], function(prev, curr) {
 	return prev + curr;
 }, 0) === 0);
