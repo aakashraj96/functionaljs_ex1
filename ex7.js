@@ -10,6 +10,14 @@ function reduce(arr, fn, initial, index = 0) {
 	}
 }
 
+
+function isEmpty(obj) {
+	for(var key in obj) {
+		if(obj.hasOwnProperty(key))
+			return false;
+	}
+	return true;
+}
 module.exports = reduce;
 
 console.log('Basic function call', reduce([1,2,3], function(prev, curr, index, arr) {
@@ -29,3 +37,8 @@ console.log('Passing Objects', reduce([{'value': 1},{'value': 2}], function(prev
 console.log('Passing  strings', reduce(['hello','world'], function(prev, curr) {
 	return prev + curr;
 }, '') === 'helloworld');
+
+
+console.log('Passing an empty object', isEmpty(reduce([{},{}], function(prev, curr) {
+	return prev + curr;
+}) === true, {}));
